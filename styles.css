@@ -1,0 +1,246 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/Principal.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+    background-attachment: fixed;
+}
+.inicio{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+}
+.inicio .title{
+    font-size: 50px;
+    margin-top: 3cm;
+}
+.inicio .sub-title{
+    font-size: 40px;
+    margin: 0;
+}
+.Menu{
+    color: #fff;
+}
+.Menu nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.Menu nav .logo{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.Menu nav .cont_links a{
+    color: #ddd;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 16px ;
+    transition: .4s ease;
+}
+.Menu nav .cont_links a:hover{
+    color: #fff;
+    font-size: 17px;
+    border-bottom: 1px solid #fff;
+}
+.dedicacion{
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 20px;
+    margin-top: 6.5cm;
+    text-align: center;
+    display: flex;
+}
+.dedicacion .title{
+    font-size: 30px;
+}
+.dedicacion .sub-title{
+    font-size: 20px;
+}
+.dedicacion div img{
+    height: 300px;
+}
+.proyectos{
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 20px;
+    margin-top: 1cm;
+}
+.proyectos .title{
+    font-size: 30px;
+}
+.proyectos .sub-title{
+    font-size: 20px;
+}
+.proyectos .contenedor{
+    display: flex;
+    justify-content: center;
+}
+.proyectos .contenedor .cont-proyectos{
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 silver;
+}
+.proyectos .contenedor .cont-proyectos img{
+    height: 300px;
+}
+.contacto{
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 20px;
+    text-align: center;
+    margin-top: 1cm;
+}
+.contacto .title{
+    font-size: 30px;
+}
+.contacto .items .sub-title{
+    font-size: 20px;
+}
+.contacto .items a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin: 5px;
+    transition: .3s ease;
+}
+.contacto .items .m:hover{
+    color: red;
+    font-size: 19px;
+    border-bottom: 1px solid red;
+}
+.contacto .items .w:hover{
+    color: green;
+    font-size: 19px;
+    border-bottom: 1px solid green;
+}
+.contacto .items .f:hover{
+    color: cornflowerblue;
+    font-size: 19px;
+    border-bottom: 1px solid cornflowerblue;
+}
+.contacto div .sub-title{
+    font-size: 20px ;
+    margin-top: 1cm;
+}
+.contacto div form{
+    border-radius: 5px;
+    padding: 20px ;
+    font-size: 18px ;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    display: grid;
+    background-color: #fff;
+}
+.contacto div form .title{
+    font-size: 30px;
+}
+.contacto div form input{
+    font-size: 18px ;
+   outline: none;
+   padding: 5px;
+   text-align: center;
+   width: 100%;
+   margin: 10px;
+   margin: auto;
+}
+.contacto div form textarea{
+    font-size: 18px ;
+   outline: none;
+   padding: 5px;
+   text-align: center;
+   width: 100%;
+   margin: 10px;
+   margin: auto;
+   resize: none;
+}
+.contacto div form button{
+    font-size: 18px ;
+    width: 70%;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    border-bottom: #fff;
+    padding: 10px;
+    transition: .3s ease;
+}
+.contacto div form button:hover{
+    font-size: 20px;
+    border-radius: 5px;
+    width: 100%;
+    margin: auto;
+    background-color: #4FD397;
+    border: none;
+    border-bottom: #fff;
+}
+footer{
+    margin-top: 1cm;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+footer .title{
+    font-size: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #ddd;
+    transition: .3s ease;
+}
+footer a:hover{
+    font-size: 17px;
+    color: #fff;
+}
+@media screen and (max-width: 914px) {
+    .dedicacion div img{
+        height: 230px;
+    }
+    .proyectos .contenedor{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .proyectos .contenedor .cont-proyectos{
+        background-color: #fff;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 20px 0 silver;
+    }
+    .proyectos .contenedor .cont-proyectos img{
+        height: 300px;
+    }
+    .contacto div form{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 536px){
+    .Menu nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .dedicacion{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacto .items{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacto div form{
+        width: 90%;
+    }
+}
+
+
+
+
